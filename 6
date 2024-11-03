@@ -1,1 +1,22 @@
-
+public class NumberChecker {
+    public static void checkNumber(int number) {
+    if (number > 0) {
+    System.out.println("Число положительное");
+    } else if (number == 0) {
+    System.out.println("Число равно нулю");
+    } else {
+    System.out.println("Число отрицательное");
+    }
+    }
+   
+    public static void main(String args) {
+    int number = 5; // 
+    checkNumber(number);
+   
+    number = 0; // 
+    checkNumber(number);
+   
+    number = -5; // 
+    checkNumber(number);
+    }
+   }
