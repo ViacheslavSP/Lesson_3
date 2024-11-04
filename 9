@@ -1,1 +1,25 @@
+public class LeapYearChecker {
+    public static boolean isLeapYear(int year) {
+        if (year % 400 == 0) {
+            return true;
+        } else if (year % 100 == 0) {
+            return false;
+        } else if (year % 4 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    public static void main(String[] args) {
+        int year = 2024; // Пример високосного года
+        boolean isLeapYear = isLeapYear(year);
+
+        System.out.println("Год " + year + " является високосным: " + isLeapYear);
+
+        year = 2020; // Пример невисокосного года
+        isLeapYear = isLeapYear(year);
+
+        System.out.println("Год " + year + " является високосным: " + isLeapYear);
+    }
+}
