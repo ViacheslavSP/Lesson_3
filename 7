@@ -1,1 +1,26 @@
-
+public class NumberChecker {
+    public static boolean isNegative(int number) {
+    if (number < 0) {
+    return true;
+    } else {
+    return false;
+    }
+    }
+   
+    public static void main(String args) {
+    int number = 5; // Пример положительного числа
+    boolean result = isNegative(number);
+   
+    System.out.println("Число " + number + " является положительным: " + !result);
+   
+    number = 0; // Пример нуля
+    result = isNegative(number);
+   
+    System.out.println("Число " + number + " является положительным: " + !result);
+   
+    number = -5; // Пример отрицательного числа
+    result = isNegative(number);
+   
+    System.out.println("Число " + number + " является отрицательным: " + result);
+    }
+   }
